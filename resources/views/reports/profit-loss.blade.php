@@ -1,1 +1,0 @@
-@extends('layouts.app')@section('content')<h1>Profit & Loss</h1><div class="grid cards"><div class="card"><p>Income</p><div class="kpi">₦{{ number_format($income,2) }}</div></div><div class="card"><p>Expenses</p><div class="kpi">₦{{ number_format($expenses,2) }}</div></div><div class="card"><p>Profit</p><div class="kpi">₦{{ number_format($profit,2) }}</div></div></div>@endsection

@@ -1,1 +1,0 @@
-@extends('layouts.app')@section('content')<div class="card"><h1>Create your business</h1>@include('businesses.form',['business'=>null,'action'=>route('businesses.store'),'method'=>'POST'])</div>@endsection

@@ -1,1 +1,0 @@
-@extends('layouts.app')@section('content')<div class="card"><h1>Vendors</h1><pre>{{ json_encode($item->toArray(), JSON_PRETTY_PRINT) }}</pre></div>@endsection

@@ -1,4 +1,0 @@
-<?php
-namespace App\Http\Controllers;
-use App\Models\{Invoice,Payment}; use Illuminate\Http\RedirectResponse; use Illuminate\Http\Request;
-class PaymentController extends Controller { public function store(Request $request, Invoice $invoice): RedirectResponse { $this->authorize('update',$invoice); $data=$request->validate(['bank_account_id'=>'nullable|exists:bank_accounts,id','amount'=>'required|numeric|min:0.01','payment_date'=>'required|date','method'=>'required|string|max:100','reference'=>'nullable|string|max:150','notes'=>'nullable|string']); Payment::create($data + ['business_id'=>$request->user()->current_business_id,'invoice_id'=>$invoice->id]); $invoice->increment('amount_paid', $data['amount']); if ((float)$invoice->fresh()->amount_paid >= (float)$invoice->total) $invoice->update(['status'=>'paid']); return back()->with('status','Payment recorded.'); } }

@@ -53,7 +53,7 @@
             ],
             "authors": [
                 {
-                    "name": "Cüneyt Şentürk",
+                    "name": "C\u00fcneyt \u015eent\u00fcrk",
                     "email": "info@akaunting.com",
                     "homepage": "https://akaunting.com",
                     "role": "Developer"
@@ -116,7 +116,7 @@
             ],
             "authors": [
                 {
-                    "name": "Denis Duliçi",
+                    "name": "Denis Duli\u00e7i",
                     "email": "info@akaunting.com",
                     "homepage": "https://akaunting.com",
                     "role": "Developer"
@@ -183,7 +183,7 @@
             ],
             "authors": [
                 {
-                    "name": "Denis Duliçi",
+                    "name": "Denis Duli\u00e7i",
                     "email": "info@akaunting.com",
                     "homepage": "https://akaunting.com",
                     "role": "Developer"
@@ -251,7 +251,7 @@
             ],
             "authors": [
                 {
-                    "name": "Denis Duliçi",
+                    "name": "Denis Duli\u00e7i",
                     "email": "info@akaunting.com",
                     "homepage": "https://akaunting.com",
                     "role": "Developer"
@@ -321,7 +321,7 @@
             ],
             "authors": [
                 {
-                    "name": "Denis Duliçi",
+                    "name": "Denis Duli\u00e7i",
                     "email": "info@akaunting.com",
                     "homepage": "https://akaunting.com",
                     "role": "Developer"
@@ -388,7 +388,7 @@
             ],
             "authors": [
                 {
-                    "name": "Denis Duliçi",
+                    "name": "Denis Duli\u00e7i",
                     "email": "info@akaunting.com",
                     "homepage": "https://akaunting.com",
                     "role": "Developer"
@@ -456,7 +456,7 @@
             ],
             "authors": [
                 {
-                    "name": "Denis Duliçi",
+                    "name": "Denis Duli\u00e7i",
                     "email": "info@akaunting.com",
                     "homepage": "https://akaunting.com",
                     "role": "Developer"
@@ -517,7 +517,7 @@
             ],
             "authors": [
                 {
-                    "name": "Denis Duliçi",
+                    "name": "Denis Duli\u00e7i",
                     "email": "info@akaunting.com",
                     "homepage": "https://akaunting.com",
                     "role": "Developer"
@@ -585,7 +585,7 @@
             ],
             "authors": [
                 {
-                    "name": "Denis Duliçi",
+                    "name": "Denis Duli\u00e7i",
                     "email": "info@akaunting.com",
                     "homepage": "https://akaunting.com",
                     "role": "Developer"
@@ -645,7 +645,7 @@
             ],
             "authors": [
                 {
-                    "name": "Denis Duliçi",
+                    "name": "Denis Duli\u00e7i",
                     "email": "info@akaunting.com",
                     "homepage": "https://akaunting.com",
                     "role": "Developer"
@@ -711,7 +711,7 @@
             ],
             "authors": [
                 {
-                    "name": "Denis Duliçi",
+                    "name": "Denis Duli\u00e7i",
                     "email": "info@akaunting.com",
                     "homepage": "https://akaunting.com",
                     "role": "Developer"
@@ -979,7 +979,7 @@
             ],
             "authors": [
                 {
-                    "name": "Balázs Dura-Kovács"
+                    "name": "Bal\u00e1zs Dura-Kov\u00e1cs"
                 }
             ],
             "description": "Encode arrays to json with raw JS objects (eg. callbacks) in them",
@@ -1704,7 +1704,7 @@
             ],
             "authors": [
                 {
-                    "name": "Christian Lück",
+                    "name": "Christian L\u00fcck",
                     "email": "christian@clue.engineering"
                 }
             ],
@@ -3420,7 +3420,7 @@
                     "homepage": "https://github.com/Nyholm"
                 },
                 {
-                    "name": "Márk Sági-Kazár",
+                    "name": "M\u00e1rk S\u00e1gi-Kaz\u00e1r",
                     "email": "mark.sagikazar@gmail.com",
                     "homepage": "https://github.com/sagikazarmark"
                 },
@@ -3619,7 +3619,7 @@
                     "homepage": "https://github.com/Nyholm"
                 },
                 {
-                    "name": "Márk Sági-Kazár",
+                    "name": "M\u00e1rk S\u00e1gi-Kaz\u00e1r",
                     "email": "mark.sagikazar@gmail.com",
                     "homepage": "https://github.com/sagikazarmark"
                 },
@@ -3629,7 +3629,7 @@
                     "homepage": "https://github.com/Tobion"
                 },
                 {
-                    "name": "Márk Sági-Kazár",
+                    "name": "M\u00e1rk S\u00e1gi-Kaz\u00e1r",
                     "email": "mark.sagikazar@gmail.com",
                     "homepage": "https://sagikazarmark.hu"
                 }
@@ -5836,7 +5836,7 @@
             ],
             "authors": [
                 {
-                    "name": "Luís Cobucci",
+                    "name": "Lu\u00eds Cobucci",
                     "email": "lcobucci@gmail.com",
                     "role": "Developer"
                 }
@@ -7011,7 +7011,7 @@
                     "email": "pabs@pablotron.org"
                 },
                 {
-                    "name": "Jonatan Männchen",
+                    "name": "Jonatan M\u00e4nnchen",
                     "email": "jonatan@maennchen.ch"
                 },
                 {
@@ -7019,7 +7019,7 @@
                     "email": "donatj@gmail.com"
                 },
                 {
-                    "name": "András Kolesár",
+                    "name": "Andr\u00e1s Koles\u00e1r",
                     "email": "kolesar@kolesar.hu"
                 }
             ],
@@ -7401,7 +7401,7 @@
                     "homepage": "http://verraes.net"
                 },
                 {
-                    "name": "Márk Sági-Kazár",
+                    "name": "M\u00e1rk S\u00e1gi-Kaz\u00e1r",
                     "email": "mark.sagikazar@gmail.com"
                 },
                 {
@@ -7753,7 +7753,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "📐 Nette Schema: validating data structures against a given Schema.",
+            "description": "\ud83d\udcd0 Nette Schema: validating data structures against a given Schema.",
             "homepage": "https://nette.org",
             "keywords": [
                 "config",
@@ -7830,7 +7830,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🛠  Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.",
+            "description": "\ud83d\udee0  Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.",
             "homepage": "https://nette.org",
             "keywords": [
                 "array",
@@ -8386,7 +8386,7 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Ménager",
+                    "name": "Fabien M\u00e9nager",
                     "email": "fabien.menager@gmail.com"
                 }
             ],
@@ -8432,7 +8432,7 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Ménager",
+                    "name": "Fabien M\u00e9nager",
                     "email": "fabien.menager@gmail.com"
                 }
             ],
@@ -8575,7 +8575,7 @@
             ],
             "authors": [
                 {
-                    "name": "Márk Sági-Kazár",
+                    "name": "M\u00e1rk S\u00e1gi-Kaz\u00e1r",
                     "email": "mark.sagikazar@gmail.com"
                 }
             ],
@@ -8696,7 +8696,7 @@
                     "email": "geloen.eric@gmail.com"
                 },
                 {
-                    "name": "Márk Sági-Kazár",
+                    "name": "M\u00e1rk S\u00e1gi-Kaz\u00e1r",
                     "email": "mark.sagikazar@gmail.com",
                     "homepage": "https://sagikazarmark.hu"
                 }
@@ -8765,7 +8765,7 @@
             ],
             "authors": [
                 {
-                    "name": "Márk Sági-Kazár",
+                    "name": "M\u00e1rk S\u00e1gi-Kaz\u00e1r",
                     "email": "mark.sagikazar@gmail.com"
                 }
             ],
@@ -8819,7 +8819,7 @@
                     "email": "joel.wurtz@gmail.com"
                 },
                 {
-                    "name": "Márk Sági-Kazár",
+                    "name": "M\u00e1rk S\u00e1gi-Kaz\u00e1r",
                     "email": "mark.sagikazar@gmail.com"
                 }
             ],
@@ -9187,7 +9187,7 @@
                     "role": "Developer"
                 },
                 {
-                    "name": "Hans-Jürgen Petrich",
+                    "name": "Hans-J\u00fcrgen Petrich",
                     "email": "petrich@tronic-media.com",
                     "role": "Developer"
                 },
@@ -10962,7 +10962,7 @@
                     "email": "fabien@symfony.com"
                 },
                 {
-                    "name": "Jean-François Simon",
+                    "name": "Jean-Fran\u00e7ois Simon",
                     "email": "jeanfrancois.simon@sensiolabs.com"
                 },
                 {
@@ -12853,7 +12853,7 @@
             ],
             "authors": [
                 {
-                    "name": "Grégoire Pineau",
+                    "name": "Gr\u00e9goire Pineau",
                     "email": "lyrixx@lyrixx.info"
                 },
                 {
@@ -13672,7 +13672,7 @@
             ],
             "authors": [
                 {
-                    "name": "Grégoire Pineau",
+                    "name": "Gr\u00e9goire Pineau",
                     "email": "lyrixx@lyrixx.info"
                 },
                 {
@@ -14225,7 +14225,7 @@
             ],
             "authors": [
                 {
-                    "name": "François Zaninotto"
+                    "name": "Fran\u00e7ois Zaninotto"
                 }
             ],
             "description": "Faker is a PHP library that generates fake data for you.",
@@ -14280,7 +14280,7 @@
             ],
             "authors": [
                 {
-                    "name": "Théo FIDRY",
+                    "name": "Th\u00e9o FIDRY",
                     "email": "theo.fidry@gmail.com"
                 }
             ],
@@ -14465,7 +14465,7 @@
             ],
             "authors": [
                 {
-                    "name": "Pádraic Brady",
+                    "name": "P\u00e1draic Brady",
                     "email": "padraic.brady@gmail.com",
                     "homepage": "https://github.com/padraic",
                     "role": "Author"
@@ -16748,11 +16748,11 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.1",
+        "php": "~8.3.0",
         "ext-bcmath": "*",
         "ext-ctype": "*",
         "ext-curl": "*",
@@ -16767,6 +16767,9 @@
         "ext-xml": "*",
         "ext-zip": "*"
     },
-    "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "platform-dev": [],
+    "plugin-api-version": "2.9.0",
+    "platform-overrides": {
+        "php": "8.3.0"
+    }
 }

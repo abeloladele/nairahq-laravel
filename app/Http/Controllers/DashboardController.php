@@ -1,0 +1,4 @@
+<?php
+namespace App\Http\Controllers;
+use App\Models\{Customer,Expense,Invoice}; use Illuminate\Http\Request; use Illuminate\View\View;
+class DashboardController extends Controller { public function __invoke(Request $request): View { $businessId=$request->user()->current_business_id; $revenue=(float) Invoice::where('business_id',$businessId)->sum('amount_paid'); $outstanding=(float) Invoice::where('business_id',$businessId)->selectRaw('COALESCE(SUM(total - amount_paid),0) as total')->value('total'); $expenses=(float) Expense::where('business_id',$businessId)->sum('amount'); $customers=Customer::where('business_id',$businessId)->latest()->limit(5)->get(); $invoices=Invoice::with('customer')->where('business_id',$businessId)->latest()->limit(5)->get(); return view('dashboard', compact('revenue','outstanding','expenses','customers','invoices')); } }

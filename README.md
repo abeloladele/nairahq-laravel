@@ -1,82 +1,81 @@
-﻿# Akaunting™
+# NairaHQ v3.0.0
 
-[![Release](https://img.shields.io/github/v/release/akaunting/akaunting?label=release)](https://github.com/akaunting/akaunting/releases)
-![Downloads](https://img.shields.io/github/downloads/akaunting/akaunting/total?label=downloads)
-[![Translations](https://badges.crowdin.net/akaunting/localized.svg)](https://crowdin.com/project/akaunting)
-[![Tests](https://img.shields.io/github/actions/workflow/status/akaunting/akaunting/tests.yml?label=tests)](https://github.com/akaunting/akaunting/actions)
+Online accounting software for Nigerian small businesses and freelancers, built as a clean Laravel Cloud-ready repository.
 
-Online accounting software designed for small businesses and freelancers. Akaunting is built with modern technologies such as Laravel, VueJS, Tailwind, RESTful API etc. Thanks to its modular structure, Akaunting provides an awesome App Store for users and developers.
+## What is included
 
-* [Home](https://akaunting.com) - The house of Akaunting
-* [Forum](https://akaunting.com/forum) - Ask for support
-* [Documentation](https://akaunting.com/hc/docs) - Learn how to use
-* [Developer Portal](https://developer.akaunting.com) - Generate passive income
-* [App Store](https://akaunting.com/apps) - Extend your Akaunting
-* [Translations](https://crowdin.com/project/akaunting) - Help us translate Akaunting
+- Laravel 12 application structure
+- Blade UI with Vite asset build
+- Authentication
+- Business onboarding
+- Customers, vendors, products/services
+- Bank accounts
+- Invoices, invoice items, payments
+- Expenses
+- Profit and loss report
+- PostgreSQL-ready migrations
+- Queue, session and cache database tables
+- No Akaunting dependencies
+- No Laravel Mix, Vue 2 or Node Sass
+- No production Composer scripts that call IDE helpers
 
-## Requirements
+## Local setup on Windows / Laragon
 
-* PHP 8.1 or higher
-* Database (e.g.: MariaDB, MySQL, PostgreSQL, SQLite)
-* Web Server (eg: Apache, Nginx, IIS)
-* [Other libraries](https://akaunting.com/hc/docs/on-premise/requirements/)
-
-## Framework
-
-Akaunting uses [Laravel](http://laravel.com), the best existing PHP framework, as the foundation framework and [Module](https://github.com/akaunting/module) package for Apps.
-
-## Installation
-
-Before installing Akaunting, make sure your environment has the required dependencies installed:
-
-* PHP 8.1 or higher with the required PHP extensions
-* Composer
-* Node.js and npm
-* Git
-* A supported database server, such as MariaDB, MySQL, PostgreSQL, or SQLite
-* A web server, such as Apache, Nginx, or IIS
-* Build tools required by some npm packages, such as `build-essential` on Debian/Ubuntu systems
-
-For the full list of PHP extensions and server requirements, see the [on-premise requirements](https://akaunting.com/hc/docs/on-premise/requirements/).
-
-Then install Akaunting:
-
-* Clone the repository: `git clone https://github.com/akaunting/akaunting.git`
-* Install dependencies: `composer install ; npm install ; npm run dev`
-* Install Akaunting:
-
-```bash
-php artisan install --db-name="akaunting" --db-username="root" --db-password="pass" --admin-email="admin@company.com" --admin-password="123456"
+```powershell
+cd C:\laragon\www
+mkdir nairahq
+cd nairahq
+# copy this repository here
+composer install
+npm install
+copy .env.example .env
+php artisan key:generate
+php artisan migrate --seed
+npm run build
+php artisan serve
 ```
 
-* Create sample data (optional): `php artisan sample-data:seed`
+Login seed account:
 
-## Contributing
+```text
+Email: admin@nairahq.test
+Password: Password@12345
+```
 
-Please, be very clear on your commit messages and Pull Requests, empty Pull Request messages may be rejected without reason.
+## Laravel Cloud build command
 
-When contributing code to Akaunting, you must follow the PSR coding standards. The golden rule is: Imitate the existing Akaunting code.
+Use PHP 8.3 or PHP 8.4.
 
-Please note that this project is released with a [Contributor Code of Conduct](https://akaunting.com/conduct). *By participating in this project you agree to abide by its terms*.
+```bash
+composer install --no-dev --prefer-dist --optimize-autoloader
+npm install
+npm run build
+php artisan config:cache
+php artisan route:cache
+php artisan view:cache
+```
 
-## Translation
+## Laravel Cloud deploy command
 
-If you'd like to contribute translations, please check out our [Crowdin](https://crowdin.com/project/akaunting) project.
+```bash
+php artisan migrate --force
+```
 
-## Changelog
+## Environment variables
 
-Please see [Releases](../../releases) for more information about what has changed recently.
+Set these in Laravel Cloud:
 
-## Security
+```env
+APP_NAME=NairaHQ
+APP_ENV=production
+APP_DEBUG=false
+APP_URL=https://your-app.laravel.cloud
+DB_CONNECTION=pgsql
+QUEUE_CONNECTION=database
+CACHE_STORE=database
+SESSION_DRIVER=database
+```
 
-Please review [our security policy](https://github.com/akaunting/akaunting/security/policy) on how to report security vulnerabilities.
+## Notes
 
-## Credits
-
-* [Denis Duliçi](https://github.com/denisdulici)
-* [Cüneyt Şentürk](https://github.com/cuneytsenturk)
-* [All Contributors](../../contributors)
-
-## License
-
-Akaunting is released under the [BSL license](LICENSE.txt).
+This is the new clean foundation. It intentionally does not reuse the Akaunting codebase because the previous source had outdated frontend tooling, abandoned packages and production build script problems.

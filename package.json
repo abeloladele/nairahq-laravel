@@ -6,10 +6,9 @@
     "build": "vite build"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "latest",
-    "axios": "latest",
-    "concurrently": "latest",
-    "laravel-vite-plugin": "latest",
-    "vite": "latest"
+    "axios": "^1.13.0",
+    "concurrently": "^9.2.0",
+    "laravel-vite-plugin": "^2.0.1",
+    "vite": "^7.2.0"
   }
 }

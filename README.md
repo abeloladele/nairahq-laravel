@@ -1,54 +1,48 @@
-# NairaHQ v3.0.0
+# NairaHQ
 
-Online accounting software for Nigerian small businesses and freelancers, built as a clean Laravel Cloud-ready repository.
+NairaHQ is a modern Laravel accounting platform for small businesses and freelancers, built for Laravel Cloud.
 
-## What is included
+## MVP modules
 
-- Laravel 12 application structure
-- Blade UI with Vite asset build
 - Authentication
 - Business onboarding
-- Customers, vendors, products/services
+- Customers
+- Vendors
+- Products and services
 - Bank accounts
-- Invoices, invoice items, payments
+- Invoices
+- Payments
 - Expenses
 - Profit and loss report
-- PostgreSQL-ready migrations
-- Queue, session and cache database tables
-- No Akaunting dependencies
-- No Laravel Mix, Vue 2 or Node Sass
-- No production Composer scripts that call IDE helpers
+- Nigerian VAT default support
 
-## Local setup on Windows / Laragon
+## Stack
 
-```powershell
-cd C:\laragon\www
-mkdir nairahq
-cd nairahq
-# copy this repository here
+- Laravel 12
+- PHP 8.4+
+- PostgreSQL
+- Blade
+- Vite
+- Plain CSS starter UI
+- Database-backed sessions, cache, and queues
+
+## Local setup
+
+```bash
+cp .env.example .env
 composer install
-npm install
-copy .env.example .env
+npm ci
 php artisan key:generate
 php artisan migrate --seed
 npm run build
 php artisan serve
 ```
 
-Login seed account:
-
-```text
-Email: admin@nairahq.test
-Password: Password@12345
-```
-
 ## Laravel Cloud build command
-
-Use PHP 8.3 or PHP 8.4.
 
 ```bash
 composer install --no-dev --prefer-dist --optimize-autoloader
-npm install
+npm ci
 npm run build
 php artisan config:cache
 php artisan route:cache
@@ -61,21 +55,11 @@ php artisan view:cache
 php artisan migrate --force
 ```
 
-## Environment variables
+## Default seed user
 
-Set these in Laravel Cloud:
-
-```env
-APP_NAME=NairaHQ
-APP_ENV=production
-APP_DEBUG=false
-APP_URL=https://your-app.laravel.cloud
-DB_CONNECTION=pgsql
-QUEUE_CONNECTION=database
-CACHE_STORE=database
-SESSION_DRIVER=database
+```text
+Email: admin@nairahq.com
+Password: Password@12345
 ```
 
-## Notes
-
-This is the new clean foundation. It intentionally does not reuse the Akaunting codebase because the previous source had outdated frontend tooling, abandoned packages and production build script problems.
+Change this immediately after first login.

@@ -1,21 +1,17 @@
 # Changelog
 
-## NairaHQ v3.0.0 - 2026-06-25
+## NairaHQ v3.0.1 - Laravel Cloud deployment hardening
 
-### Added
-- Rebuilt project as a clean Laravel Cloud-ready repository.
-- Added authentication, business onboarding and business-scoped accounting records.
-- Added customers, vendors, products, bank accounts, invoices, payments and expenses.
-- Added dashboard KPIs and profit/loss report.
-- Added PostgreSQL-ready migrations and seed data.
-- Added Vite build script for Laravel Cloud.
+- Added required `bootstrap/cache` directory with Git-tracked placeholder.
+- Added required `storage/framework/*`, `storage/logs`, and `storage/app/*` runtime directories.
+- Added a committed `package-lock.json` for predictable frontend builds.
+- Added Laravel configuration files for app, auth, database, cache, sessions, queues, filesystems, logging, mail, services, and NairaHQ defaults.
+- Removed unnecessary Vue Vite plugin dependency from the frontend build.
+- Fixed bank account route model binding parameter naming.
+- Updated Laravel Cloud deployment documentation.
 
-### Removed
-- Removed Akaunting dependency path.
-- Removed Laravel Mix-era frontend assumptions.
-- Removed development-only Composer scripts from production lifecycle.
+## NairaHQ v3.0.0 - Clean Laravel Cloud accounting foundation
 
-### Security
-- Added business ownership policy.
-- Added business selection middleware.
-- Added hashed passwords and production-safe environment defaults.
+- Built a clean Laravel 12 accounting MVP without Akaunting dependencies.
+- Added businesses, customers, vendors, products, invoices, payments, expenses, bank accounts, and reports.
+- Added Vite build pipeline and PostgreSQL-ready environment configuration.
